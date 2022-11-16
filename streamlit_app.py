@@ -7,4 +7,6 @@ streamlit.text("Omega 3 & Blueberry Oatmeal")
 
 fruit_list = pd.read_csv("fruit_macros.csv")
 
+streamlit.multiselect("Pick some fruits: ", list(fruit_list.index())
+
 streamlit.dataframe(fruit_list)
