@@ -9,6 +9,6 @@ fruit_list = pd.read_csv("fruit_macros.csv")
 fruit_list = fruit_list.set_index('Fruit')
 
 fruits_selected = streamlit.multiselect("Pick some fruits: ", list(fruit_list.index), ['Avocado','Strawberries'])
-#fruits_to_show = fruit_list.loc[fruits_selected]
+fruits_to_show = fruit_list.loc[fruits_selected]
 
-streamlit.dataframe(fruit_list)
+streamlit.dataframe(fruits_to_show)
