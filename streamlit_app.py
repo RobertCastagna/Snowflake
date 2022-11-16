@@ -8,7 +8,7 @@ streamlit.text("Omega 3 & Blueberry Oatmeal")
 fruit_list = pd.read_csv("fruit_macros.csv")
 fruit_list.set_index('Fruit')
 
-streamlit.multiselect("Pick some fruits: ", list(fruit_list.index), ['Avocado', 'Strawberries'])
+streamlit.multiselect("Pick some fruits: ", list(fruit_list.index))
 # fruits_to_show = fruit_list.loc[fruits_selected]
 
 streamlit.dataframe(fruit_list)
