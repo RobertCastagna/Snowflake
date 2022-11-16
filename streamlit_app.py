@@ -7,4 +7,4 @@ streamlit.text("Omega 3 & Blueberry Oatmeal")
 
 fruit_list = pd.read_csv("fruit_macros.csv")
 
-streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(fruit_list)
