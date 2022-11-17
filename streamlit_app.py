@@ -35,4 +35,4 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 add_fruit = streamlit.multiselect("Add a fruit: ", list(fruit_list.index))
-mr_cur.execute("insert into fruit_load_list values ('from Streamlit');")
+my_cur.execute("insert into fruit_load_list values ('from Streamlit')")
